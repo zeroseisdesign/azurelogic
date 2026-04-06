@@ -43,11 +43,13 @@
 
 .caixas-brancas {
     gap: 48px;
+    flex-direction: column;
 }
 
 .caixas-brancas>div {
     background-color: white;
     padding: 48px;
+    flex-basis: calc((100% - 2 *48px) / 3) !important;
 }
 
 .caixa-video {
@@ -75,4 +77,10 @@
 .caixa-video>div {
     position: relative;
     z-index: 1;
+}
+
+@media (min-width: 1024px) {
+    .caixas-brancas {
+        flex-direction: row;
+    }
 }

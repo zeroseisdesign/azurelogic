@@ -52,11 +52,10 @@ header nav {
     backdrop-filter: blur(10px);
 }
 
-header nav>div,
 header nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
+    display: none;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -202,6 +201,10 @@ main>section:nth-of-type(even) {
         font-size: 72px;
         line-height: 72px;
         letter-spacing: -3.8px;
+    }
+
+    header nav ul {
+        display: flex;
     }
 }
 
