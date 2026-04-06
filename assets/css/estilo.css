@@ -97,6 +97,7 @@ header div.banner {
     justify-content: space-between;
     gap: 64px;
     padding: 20px;
+    flex-direction: column-reverse;
 }
 
 header div.banner>div {
@@ -187,6 +188,7 @@ main>section:nth-of-type(even) {
 
     header div.banner {
         padding: 24px 48px;
+        flex-direction: row;
     }
 
     .contenedor-flex {
