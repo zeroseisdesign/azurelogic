@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #FAF8FF;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #43474d;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -1.2px;
+    margin-top: 0;
+    margin-bottom: 32.5px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.9px;
+    color: #000F22;
+}
+
+section {
+    padding: 128px 48px;
+}
+
+footer {
+    padding: 80px 48px;
+}
+
+/* Estilos para el Header principal */
+header {
+    background-image: linear-gradient(135deg, #000F22 0%, #0A2540 100%);
+}
+
+header nav {
+    /* Estilos para as propiedades do contenedor tipo flex */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    /* Fin dos estilos para as propiedades do contenedor tipo flex */
+
+    padding: 24px 48px;
+    background: rgba(250, 248, 255, 0.8);
+    box-shadow: 0px 20px 40px rgba(10, 37, 64, 0.04);
+    backdrop-filter: blur(10px);
+}
+
+header nav>div,
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+header nav ul li {
+    width: 100px;
+    min-width: fit-content;
+    text-align: center;
+}
+
+header nav>div a {
+    width: 100px;
+    min-width: fit-content;
+    text-align: center;
+
+    text-decoration: underline transparent;
+    color: #43474D;
+    transition: all 0.3s;
+    text-underline-offset: 8px;
+}
+
+header nav ul a {
+    text-decoration: underline transparent;
+    color: #43474D;
+    transition: all 0.3s;
+    text-underline-offset: 8px;
+}
+
+header nav ul a:hover {
+    color: #000F22;
+    font-weight: bold;
+    text-decoration-color: #00677E;
+}
+
+header div.banner {
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+    padding: 20px;
+}
+
+header div.banner>div {
+    flex-basis: calc(50% - 32px) !important;
+}
+
+header div.banner p {
+    margin-bottom: 32.5px;
+}
+
+
+
+/* Fin de los estilos para el Header principal */
+
+
+.boton {
+    padding: 8px 24px;
+    background: #0A2540;
+    border-radius: 6px;
+    width: fit-content;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+.boton-principal,
+.boton-secundario {
+    padding: 17px 32px;
+}
+
+.boton-principal {
+    background: linear-gradient(90deg, #00677E 0%, #00D2FD 100%);
+}
+
+.boton-secundario {
+    border: 1px solid rgba(196, 198, 206, 0.2);
+}
+
+.botones-banner {
+    gap: 16px;
+}
+
+/* Clases auxiliares */
+.contenedor-flex {
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contenedor-flex>div {
+    flex: 1;
+}
+
+.contenedor-centrado {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.textos-blancos {
+    color: #FFFFFF !important;
+}
+
+.fondo-terciario {
+    background: #D2D9F4 !important;
+}
+
+.imaxe-responsive {
+    width: 100%;
+    height: auto;
+}
+
+main>section:nth-of-type(odd) {
+    background: transparent;
+}
+
+main>section:nth-of-type(even) {
+    background: #F2F3FF;
+}
+
+/* Tablet en vertical */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.8px;
+    }
+
+    header div.banner {
+        padding: 24px 48px;
+    }
+
+    .contenedor-flex {
+        flex-direction: row;
+    }
+}
+
+/* Tablet en horizontal ou portátil pequeno */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -3.8px;
+    }
+}
+
+/* Portátil grande */
+@media (min-width: 1440px) {
+    h1 {
+        font-size: 96px;
+        line-height: 96px;
+        letter-spacing: -4.8px;
+    }
+}

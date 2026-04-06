@@ -1,0 +1,78 @@
+.key-visual {
+    max-width: 693px;
+    min-width: 300px;
+}
+
+.contidos-solucions {
+    gap: 64px;
+}
+
+.textos-solucions {
+    flex-basis: calc(40% - 32px) !important;
+}
+
+.video-corporativo {
+    position: relative;
+    height: 256px;
+    overflow: hidden;
+}
+
+.video-corporativo video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+}
+
+.grupo-solucions {
+    gap: 32px;
+    flex-basis: calc(60% - 32px) !important;
+}
+
+.grupo-solucions>div {
+    flex-basis: calc(50% - 16px) !important;
+    background-color: #F2F3FF;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.caixas-brancas {
+    gap: 48px;
+}
+
+.caixas-brancas>div {
+    background-color: white;
+    padding: 48px;
+}
+
+.caixa-video {
+    position: relative;
+    background-color: #0A2540 !important;
+    background-image: url(../imaxes/servidores.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.caixa-video img.fondo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    visibility: hidden;
+}
+
+.caixa-video>div {
+    position: relative;
+    z-index: 1;
+}
