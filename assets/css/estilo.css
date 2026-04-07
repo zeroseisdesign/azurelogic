@@ -26,11 +26,22 @@ h2 {
     color: #000F22;
 }
 
+h2.sub-raiado::after {
+    content: '';
+    display: block;
+    width: 96px;
+    height: 4px;
+    background: #00677E;
+    margin-block: 16px;
+}
+
 section {
     padding: 128px 48px;
 }
 
 footer {
+    display: grid;
+    grid-template-columns: [inicio inicio-primera] 33.333% [fin-primera inicio-segunda] 50% [fin-segunda inicio-tercera] auto [fin-tercera ultima];
     padding: 80px 48px;
 }
 
