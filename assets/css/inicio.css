@@ -29,6 +29,18 @@
     z-index: -1;
 }
 
+.video-corporativo>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-corporativo h3 {
+    color: #fff;
+}
+
 .grupo-solucions {
     gap: 32px;
     flex-basis: calc(60% - 32px) !important;
