@@ -6,15 +6,16 @@
     <base href="http://azure-logic.local/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercio 1</title>
-    <link rel="stylesheet" href="assets/css/estilo.css">
-    <link rel="stylesheet" href="assets/css/inicio.css">
+    <link rel="stylesheet" href="assets/css/imprimir.css" media="print">
+    <link rel="stylesheet" href="assets/css/estilo.css" media="screen">
+    <link rel="stylesheet" href="assets/css/inicio.css" media="screen">
 </head>
 
 <body>
     <header>
-        <nav class="contenedor-flex">
+        <nav class="contenedor-flex posicion-fija">
             <img src="assets/imaxes/logotipo.png" alt="logotipo" width="163" height="32">
-            <ul>
+            <ul class="oculto-print">
                 <li><a role="button" href="#">Inicio</a></li>
                 <li><a role="button" href="#">Solucións</a></li>
                 <li><a role="button" href="#">Excelencia</a></li>
@@ -35,8 +36,8 @@
                 </div>
             </div>
             <div>
-                <img class="imaxe-responsive key-visual" src="assets/imaxes/globo-terraqueo.png" alt="Globo terraqueo"
-                    width="693" height="752">
+                <img class="imaxe-responsive key-visual oculto-print" src="assets/imaxes/globo-terraqueo.png"
+                    alt="Globo terraqueo" width="693" height="752">
             </div>
         </div>
     </header>
@@ -110,7 +111,8 @@
                         </ul>
                     </div>
                     <div class="caixa-video">
-                        <img class="fondo" src="assets/imaxes/servidores.png" alt="servidores" width="363" height="453">
+                        <img class="fondo oculto-print" src="assets/imaxes/servidores.png" alt="servidores" width="363"
+                            height="453">
                         <div>
                             <button type="button" aria-label="play">
                                 <img src="assets/imaxes/icono-play.svg" alt="play">
@@ -128,12 +130,12 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="contenedor-grid">
         <div>
             <img src="assets/imaxes/logotipo-footer.svg" alt="logotipo" width="165" height="28">
             <p>Deseñando o Pulso Arquitectónico para a próxima xeración de xigantes dixitais.</p>
         </div>
-        <div>
+        <div class="oculto-print">
             <div>
                 <h3>Navegación</h3>
                 <ul>
