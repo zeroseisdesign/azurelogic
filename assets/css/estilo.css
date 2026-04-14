@@ -27,8 +27,6 @@ h2 {
 }
 
 h3 {
-    font-family: 'Arial';
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 37px;
@@ -47,10 +45,67 @@ section {
     padding: 128px 48px;
 }
 
+/* formularios */
+
+input[type=email] {
+    padding: 13px 16px 14px;
+    width: 180px;
+    height: 44px;
+    border: none;
+    background: #E2E7FF;
+    border-radius: 6px 0px 0px 6px;
+}
+
+button[type=submit] {
+    padding: 12px 24px;
+    width: 111px;
+    height: 44px;
+    background: #000F22;
+    border-radius: 0px 6px 6px 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6B7280;
+}
+
 footer {
     grid-template-rows: repeat(3, auto [col-start]);
     grid-template-columns: 1fr;
     padding: 40px 20px;
+}
+
+footer p,
+footer ul a {
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: rgba(67, 71, 77, 0.7);
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer p small {
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.5px;
+}
+
+footer form.contenedor-flex {
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 /* Estilos para el Header principal */
@@ -204,6 +259,14 @@ main>section:nth-of-type(even) {
     background: #F2F3FF;
 }
 
+footer h5 {
+    margin-top: 0;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
 /* Tablet en vertical */
 @media (min-width: 768px) {
     h1 {
@@ -225,6 +288,7 @@ main>section:nth-of-type(even) {
         grid-template-columns: repeat(2, 1fr [col-start]);
         grid-template-rows: 1fr;
         padding: 80px 48px;
+        gap: 64px;
     }
 }
 
@@ -237,8 +301,20 @@ main>section:nth-of-type(even) {
     }
 
     footer {
-        grid-template-columns: repeat(3, 1fr [col-start]);
-        grid-template-rows: 1fr;
+        grid-template: "logotipo legal contacto" 1fr / 1fr 1fr 1fr;
+    }
+
+    .item-1 {
+        grid-area: logotipo;
+    }
+
+    .item-2 {
+        grid-area: legal;
+    }
+
+    .item-3 {
+        grid-area: contacto;
+        justify-items: end;
     }
 
     header nav ul {
@@ -252,6 +328,10 @@ main>section:nth-of-type(even) {
         font-size: 96px;
         line-height: 96px;
         letter-spacing: -4.8px;
+    }
+
+    input[type=email] {
+        width: 241px;
     }
 }
 
