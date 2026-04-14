@@ -334,29 +334,3 @@ footer h5 {
         width: 241px;
     }
 }
-
-@media print {
-    * {
-        background: none !important;
-        color: black !important;
-        box-sizing: initial !important;
-    }
-
-    div,
-    section,
-    footer {
-        margin: initial !important;
-        padding: initial !important;
-    }
-
-    button,
-    img,
-    input,
-    nav,
-    a,
-    video,
-    .video-corporativo,
-    .oculto-print {
-        display: none;
-    }
-}
