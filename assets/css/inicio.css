@@ -63,6 +63,21 @@
     flex-basis: calc((100% - 2 *48px) / 3) !important;
 }
 
+.caixas-brancas h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000F22;
+}
+
+.caixas-brancas h3 span {
+    display: block;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 48px;
+    color: rgba(176, 200, 235, 0.3);
+}
+
 .caixa-video {
     position: relative;
     background-color: #0A2540 !important;
