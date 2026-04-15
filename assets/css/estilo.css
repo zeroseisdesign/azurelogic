@@ -1,11 +1,12 @@
+@import url(../fonts/inter/inter.css);
+
 * {
     box-sizing: border-box;
 }
 
 body {
     background: #FAF8FF;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
+    font-family: InterVariable;
     font-weight: 400;
     font-style: normal;
     margin: 0;
@@ -74,7 +75,6 @@ button[type=submit] {
 
 
 ::placeholder {
-    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #6B7280;
@@ -159,11 +159,11 @@ header nav ul a {
     color: #43474D;
     transition: all 0.3s;
     text-underline-offset: 8px;
+    font-weight: 700;
 }
 
 header nav ul a:hover {
     color: #000F22;
-    font-weight: bold;
     text-decoration-color: #00677E;
 }
 
@@ -279,7 +279,7 @@ footer h5 {
     }
 
     header div.banner {
-        padding: 24px 48px;
+        padding: 124px 24px 48px;
         flex-direction: row;
     }
 
