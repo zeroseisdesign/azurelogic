@@ -1,0 +1,13 @@
+header {
+    background: transparent;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: #00677E;
+    margin-top: 128px;
+}

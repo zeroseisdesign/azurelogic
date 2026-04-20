@@ -84,6 +84,8 @@ footer {
     grid-template-rows: repeat(3, auto [col-start]);
     grid-template-columns: 1fr;
     padding: 40px 20px;
+    background-color: #D2D9F4;
+    margin-top: 129px;
 }
 
 footer p,
@@ -126,6 +128,7 @@ header nav {
     backdrop-filter: blur(10px);
     min-width: 100vw;
     z-index: 100;
+    top: 0;
 }
 
 header nav ul {
@@ -255,7 +258,7 @@ main>section:nth-of-type(even) {
     background: #F2F3FF;
 }
 
-footer h5 {
+footer h3 {
     margin-top: 0;
     font-size: 12px;
     line-height: 16px;

@@ -3,22 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
+    <base href="http://azure-logic.local/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticia</title>
-    <link rel="stylesheet" href="assets/css/estilo.css">
+    <title>Noticias | Azure logic</title>
+    <link rel="stylesheet" href="assets/css/imprimir.css" media="print">
+    <link rel="stylesheet" href="assets/css/estilo.css" media="screen">
+    <link rel="stylesheet" href="assets/css/noticia.css" media="screen">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Azure logic">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
     <header>
-        <nav class="contenedor-flex">
+        <nav class="contenedor-flex posicion-fija">
             <img src="assets/imaxes/logotipo.png" alt="logotipo" width="163" height="32">
-            <ul>
-                <li><a role="button" href="#">Inicio</a></li>
-                <li><a role="button" href="#">Solucións</a></li>
+            <ul class="oculto-print">
+                <li><a role="button" href="index.html">Inicio</a></li>
+                <li><a role="button" href="quen-somos.html">Solucións</a></li>
                 <li><a role="button" href="#">Excelencia</a></li>
-                <li><a role="button" href="#">Contacto</a></li>
+                <li><a role="button" href="contacto.html">Contacto</a></li>
             </ul>
-            <a class="boton textos-blancos" role="button" href="#">Contactar con ventas</a>
+            <a class="boton textos-blancos" role="button" href="contacto.html">Contactar con ventas</a>
         </nav>
         <div class="banner">
             <img src="assets/imaxes/foto-noticia.jpg" alt="Obra de arte" width="1280" height="716">
@@ -119,36 +128,40 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div>
+    <footer class="contenedor-grid">
+        <div class="item-1">
             <img src="assets/imaxes/logotipo-footer.svg" alt="logotipo" width="165" height="28">
-            <cite>Deseñando o Pulso Arquitectónico para a próxima xeración de xigantes dixitais.</cite>
+            <p>Deseñando o Pulso Arquitectónico para a próxima xeración de xigantes dixitais.</p>
         </div>
-        <div>
+        <div class="item-2 oculto-print contenedor-flex">
             <div>
                 <h3>Navegación</h3>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Solucións</a></li>
-                    <li><a href="#">Excelencia</a></li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Solucións</a></li>
+                        <li><a href="#">Excelencia</a></li>
+                    </ul>
+                </nav>
             </div>
             <div>
                 <h3>legalidade</h3>
-                <ul>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Mapa do sitio</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Mapa do sitio</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <div>
+        <div class="item-3">
             <h3>Mantéñase ao día</h3>
-            <form action="#" method="post">
+            <form action="#" method="post" class="contenedor-flex">
                 <input type="email" name="email" id="email" placeholder="Enderezo de correo">
                 <button type="submit">Unirse</button>
             </form>
-            <p>© 2024 Azure Logic. Deseñando o Pulso Arquitectónico.</p>
+            <p><small>© 2024 Azure Logic. Deseñando o Pulso Arquitectónico.</small></p>
         </div>
     </footer>
 </body>
