@@ -29,19 +29,50 @@
             </ul>
             <a class="boton textos-blancos" role="button" href="contacto.html">Contactar con ventas</a>
         </nav>
-        <div class="contenedor-centrado">
-            <h1>CONTACTO</h1>
-        </div>
+        <section>
+            <div class="contenedor-centrado">
+                <h1>CONTACTO</h1>
+            </div>
+        </section>
     </header>
     <main>
         <section>
-            <div class="contenedor-grid contenedor-centrado">
+            <div class="contenedor-grid columna-xl-aside contenedor-centrado">
                 <div>
                     <h2>Fale cos nosos enxeñeiros.</h2>
                     <p>Estamos aquí para axudarche a escalar a túa infraestrutura intelixente. Envíanos un correo ou
                         programa unha demostración técnica cos nosos especialistas.</p>
                 </div>
-                <aside></aside>
+
+                <form class="contenedor-grid" action="confirmacion.html" method="get">
+                    <div>
+                        <label for="nome">NOME COMPLETO</label>
+                        <input type="text" name="Nome" id="nome" placeholder="Ex. Brais García">
+                    </div>
+                    <div>
+                        <label for="email">CORREO ELECTRÓNICO *</label>
+                        <input type="email" name="Email" id="email" placeholder="brais@empresa.gal" required>
+                    </div>
+                    <div>
+                        <span class="label">TIPO DE PERFIL</span>
+                        <label for="autonomo" class="label-radio">
+                            <input type="radio" name="Perfil" id="autonomo" value="autonomo"> Autónomo
+                        </label>
+                        <label for="empresa" class="label-radio">
+                            <input type="radio" name="Perfil" id="empresa" value="empresa"> Empresa
+                        </label>
+                    </div>
+                    <div>
+                        <label for="pais"></label>
+                        <select name="Pais" id="pais">
+                            <option value="Es">España</option>
+                            <option value="Pt">Portugal</option>
+                            <option value="Ad">Andorra</option>
+                        </select>
+                    </div>
+                </form>
+
+                <aside>aside</aside>
             </div>
         </section>
 
@@ -76,7 +107,7 @@
         <div class="item-3">
             <h3>Mantéñase ao día</h3>
             <form action="#" method="post" class="contenedor-flex">
-                <input type="email" name="email" id="email" placeholder="Enderezo de correo">
+                <input type="email" name="Newsletter" placeholder="Enderezo de correo">
                 <button type="submit">Unirse</button>
             </form>
             <p><small>© 2024 Azure Logic. Deseñando o Pulso Arquitectónico.</small></p>
