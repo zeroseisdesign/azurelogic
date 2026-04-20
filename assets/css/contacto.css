@@ -15,8 +15,8 @@ h1 {
 h2 {
     margin-top: 0;
     margin-bottom: 16px;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 48px;
+    line-height: 48px;
     letter-spacing: -3px;
     color: #000F22;
 }
@@ -27,4 +27,11 @@ header>section {
 
 main>section:first-of-type {
     padding: 0 48px 128px;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 60px;
+        line-height: 60px;
+    }
 }
