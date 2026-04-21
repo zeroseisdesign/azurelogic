@@ -43,54 +43,122 @@
                     <p>Estamos aquí para axudarche a escalar a túa infraestrutura intelixente. Envíanos un correo ou
                         programa unha demostración técnica cos nosos especialistas.</p>
                 </div>
-
-                <form class="contenedor-grid" action="confirmacion.html" method="get">
-                    <div>
-                        <label for="nome">NOME COMPLETO</label>
-                        <input type="text" name="Nome" id="nome" placeholder="Ex. Brais García">
+                <section>
+                    <form class="contenedor-grid" action="confirmacion.html" method="get">
+                        <div class="col-izquierda">
+                            <label for="nome">NOME COMPLETO</label>
+                            <input type="text" name="Nome" id="nome" placeholder="Ex. Brais García">
+                        </div>
+                        <div class="col-derecha">
+                            <label for="email">CORREO ELECTRÓNICO *</label>
+                            <input type="email" name="Email" id="email" placeholder="brais@empresa.gal" required>
+                        </div>
+                        <div class="col-100">
+                            <span class="label">TIPO DE PERFIL</span>
+                            <label for="autonomo" class="label-radio">
+                                <input type="radio" name="Perfil" id="autonomo" value="autonomo"> Autónomo
+                            </label>
+                            <label for="empresa" class="label-radio">
+                                <input type="radio" name="Perfil" id="empresa" value="empresa"> Empresa
+                            </label>
+                        </div>
+                        <div class="col-100">
+                            <label for="pais">País</label>
+                            <select name="Pais" id="pais">
+                                <option value="Es">España</option>
+                                <option value="Pt">Portugal</option>
+                                <option value="Ad">Andorra</option>
+                            </select>
+                        </div>
+                        <div class="col-100">
+                            <label for="mensaxe">Mensaxe</label>
+                            <textarea name="Mensaxe" id="mensaxe"
+                                placeholder="Como podemos axudarche con Azure Logic?"></textarea>
+                        </div>
+                        <div class="col-100">
+                            <label for="privacidade" class="label-checked">
+                                <input type="checkbox" name="Privacidade" id="privacidade" required>
+                                <span>Acepto a <a href="#">Política de Privacidade</a> e o tratamento dos meus datos
+                                    para
+                                    fins
+                                    comerciais.*</span>
+                            </label>
+                        </div>
+                        <div class="col-100 contenedor-grid botones-opcion">
+                            <button type="submit">Enviar Mensaxe</button> <button type="reset"
+                                class="secundario">Resetear</button>
+                        </div>
+                        <small class="col-100">(*) Os campos con asterisco son obrigatorios.</small>
+                    </form>
+                </section>
+                <aside>
+                    <div class="oficina-central">
+                        <h3 class="textos-blancos">Oficina Central</h3>
+                        <p>Cidade das TIC, A Coruña</p>
                     </div>
                     <div>
-                        <label for="email">CORREO ELECTRÓNICO *</label>
-                        <input type="email" name="Email" id="email" placeholder="brais@empresa.gal" required>
+                        <div>
+                            <div class="icono">
+                                <img src="assets/imaxes/icon-email.svg" alt="Icono email" width="20" height="16">
+                            </div>
+                            <div>
+                                <h4>Escríbenos</h4>
+                                <ul>
+                                    <li><a href="mailto:vendas@azurelogic.gal">vendas@azurelogic.gal</a></li>
+                                    <li><a href="mailto:soporte@azurelogic.gal">soporte@azurelogic.gal</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="icono">
+                                <img src="assets/imaxes/icono-telefono.svg" alt="icono de teléfono" width="18"
+                                    height="18">
+                            </div>
+                            <div>
+                                <h4>Chámanos</h4>
+                                <p>
+                                    <a href="tel:+34981000000">+34 981 00 00 00</a><br>
+                                    L-V: 09:00 - 18:00
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="icono">
+                                <img src="assets/imaxes/icono-geolocalizacion.svg" alt=" icono localización" width="16"
+                                    height="20">
+                            </div>
+                            <div>
+                                <h4>Visítanos</h4>
+                                <address>
+                                    Rúa da Innovación, Edificio B <br>15008 A Coruña, Galicia
+                                </address>
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <span class="label">TIPO DE PERFIL</span>
-                        <label for="autonomo" class="label-radio">
-                            <input type="radio" name="Perfil" id="autonomo" value="autonomo"> Autónomo
-                        </label>
-                        <label for="empresa" class="label-radio">
-                            <input type="radio" name="Perfil" id="empresa" value="empresa"> Empresa
-                        </label>
+                        <blockquote>
+                            "A precisión de Azure Logic permitiunos
+                            reducir o noso tempo de despregue nun
+                            40%. O seu equipo de soporte foi
+                            fundamental."
+                        </blockquote>
+                        <div>
+                            <div>
+                                <img class="miniatura-perfil" src="assets/imaxes/roi-fernandez.jpg"
+                                    alt="Retrato de Roi Fernández" width="80" height="80">
+                            </div>
+                            <div>
+                                <p><cite>Roi Fernández</cite><br>
+                                    CTO, Galician Data Systems</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <label for="pais">País</label>
-                        <select name="Pais" id="pais">
-                            <option value="Es">España</option>
-                            <option value="Pt">Portugal</option>
-                            <option value="Ad">Andorra</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="mensaxe">Mensaxe</label>
-                        <textarea name="Mensaxe" id="mensaxe"
-                            placeholder="Como podemos axudarche con Azure Logic?"></textarea>
-                    </div>
-                    <div>
-                        <label for="privacidade" class="label-checked">
-                            <input type="checkbox" name="Privacidade" id="privacidade">
-                            <span>Acepto a <a href="#">Política de Privacidade</a> e o tratamento dos meus datos para
-                                fins
-                                comerciais.*</span>
-                        </label>
-                    </div>
-                </form>
-
-                <aside>aside</aside>
+                </aside>
             </div>
         </section>
 
     </main>
-    <footer class="contenedor-grid">
+    <footer class=" contenedor-grid">
         <div class="item-1">
             <img src="assets/imaxes/logotipo-footer.svg" alt="logotipo" width="165" height="28">
             <p>Deseñando o Pulso Arquitectónico para a próxima xeración de xigantes dixitais.</p>

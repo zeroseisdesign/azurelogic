@@ -22,16 +22,64 @@ h2 {
 }
 
 header>section {
-    padding: 128px 48px 0;
+    padding: 148px 20px 0;
 }
 
 main>section:first-of-type {
-    padding: 0 48px 128px;
+    padding: 0 20px 128px;
 }
+
+aside .oficina-central {
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, rgba(0, 15, 34, 0.8) 0%, rgba(0, 15, 34, 0) 100%), url(../imaxes/oficina-central.webp) center / cover, #000F22;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 32px;
+    border-radius: 8px;
+}
+
+aside .oficina-central h3 {
+    margin: 0px 0px 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+aside .oficina-central p {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #768DAD;
+}
+
+aside .icono {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 48px;
+    height: 48px;
+    background: #E2E7FF;
+    border-radius: 12px;
+}
+
 
 @media (min-width: 768px) {
     h2 {
         font-size: 60px;
         line-height: 60px;
+    }
+
+    header>section {
+        padding: 128px 48px 0;
+    }
+
+    main>section:first-of-type {
+        padding: 0 48px 128px;
     }
 }
