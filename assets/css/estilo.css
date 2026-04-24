@@ -1,16 +1,30 @@
 @import url(../fonts/inter/inter.css);
 
+:root {
+    --color-principal: #43474d;
+    --color-acento: #00677E;
+    --fuente-principal: InterVariable;
+}
+
 * {
     box-sizing: border-box;
 }
 
+:focus {
+    outline-color: #00D2FD;
+}
+
 body {
     background: #FAF8FF;
-    font-family: InterVariable;
+    font-family: var(--fuente-principal);
     font-weight: 400;
     font-style: normal;
     margin: 0;
-    color: #43474d;
+    color: var(--color-principal);
+}
+
+cite {
+    font-style: italic;
 }
 
 h1 {
@@ -36,12 +50,19 @@ h3 {
     line-height: 37px;
 }
 
+h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000F22;
+}
+
 h2.sub-raiado::after {
     content: '';
     display: block;
     width: 96px;
     height: 4px;
-    background: #00677E;
+    background: var(--color-acento);
     margin-block: 16px;
 }
 
@@ -50,7 +71,7 @@ section {
 }
 
 a {
-    color: #00677E;
+    color: var(--color-acento);
 }
 
 /* formularios */
@@ -84,14 +105,44 @@ label.label-checked {
     align-items: start;
 }
 
-input,
-select,
-textarea {
+:is(input,
+    select,
+    textarea) {
     padding: 13px 16px;
     border: none;
     background: #E2E7FF;
     border-radius: 6px;
     width: 100%;
+}
+
+:is(input,
+    select,
+    textarea):focus {
+    background-color: #fafafa;
+}
+
+:is(input,
+    select,
+    textarea):invalid {
+    outline-color: #fd3b00;
+}
+
+:is(input,
+    select,
+    textarea):invalid:required {
+    background: #d1d1d1;
+}
+
+:is(input,
+    select,
+    textarea):invalid:out-of-range {
+    outline-color: #fdba00;
+}
+
+:is(input,
+    select,
+    textarea):valid {
+    outline-color: #00fd59;
 }
 
 textarea {
@@ -117,7 +168,7 @@ input[type=radio] {
 }
 
 input[type=radio]:checked {
-    background-color: #00677E;
+    background-color: var(--color-acento);
     border-color: transparent;
 }
 
@@ -155,7 +206,7 @@ input[type=checkbox]:checked::before {
     right: 0;
     margin: auto;
     text-align: center;
-    color: #00677E;
+    color: var(--color-acento);
 }
 
 ::placeholder {
@@ -167,7 +218,7 @@ input[type=checkbox]:checked::before {
 button,
 .button {
     padding: 18px 32px;
-    background: linear-gradient(90deg, #00677E 0%, #00D2FD 100%);
+    background: linear-gradient(90deg, var(--color-acento) 0%, #00D2FD 100%);
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
@@ -180,7 +231,7 @@ button,
 .secundario {
     border: 2px solid rgba(196, 198, 206, 0.2);
     background: white;
-    color: #43474D;
+    color: var(--color-principal);
 }
 
 a.button {
@@ -279,14 +330,14 @@ header nav>div a {
     text-align: center;
 
     text-decoration: underline transparent;
-    color: #43474D;
+    color: var(--color-principal);
     transition: all 0.3s;
     text-underline-offset: 8px;
 }
 
 header nav ul a {
     text-decoration: underline transparent;
-    color: #43474D;
+    color: var(--color-principal);
     transition: all 0.3s;
     text-underline-offset: 8px;
     font-weight: 700;
@@ -294,7 +345,7 @@ header nav ul a {
 
 header nav ul a:hover {
     color: #000F22;
-    text-decoration-color: #00677E;
+    text-decoration-color: var(--color-acento);
 }
 
 header div.banner {
@@ -335,7 +386,7 @@ header div.banner p {
 }
 
 .boton-principal {
-    background: linear-gradient(90deg, #00677E 0%, #00D2FD 100%);
+    background: linear-gradient(90deg, var(--color-acento) 0%, #00D2FD 100%);
 }
 
 .boton-secundario {
@@ -410,7 +461,7 @@ footer h3 {
     gap: 32px;
 }
 
-.columna-xl-aside section {
+.columna-xl-aside>section:first-of-type {
     grid-column-start: 1;
     grid-row-start: 2;
     background: #FFFFFF;
@@ -500,18 +551,29 @@ footer h3 {
 
     .columna-xl-aside {
         /*grid-template: auto auto / calc(672 / 1088 * 100%) calc(416 / 1088 * 100%);*/
-        grid-template: auto auto / 60% 40%;
+        grid-template: auto / 60% 40%;
+        grid-template-areas:
+            "titulo ."
+            "section aside";
         gap: 32px;
     }
 
-    .columna-xl-aside section {
-        grid-column-start: 1;
-        grid-row-start: 2;
+    .columna-xl-aside>div:first-of-type {
+        grid-area: titulo;
     }
 
-    .columna-xl-aside aside {
-        grid-column-start: 2;
-        grid-row-start: 2;
+    .columna-xl-aside>section:first-of-type {
+        grid-area: section;
+    }
+
+    .columna-xl-aside>section {
+        grid-column-start: 1;
+    }
+
+    .columna-xl-aside>aside {
+        grid-area: aside;
+        position: sticky;
+        top: 120px;
     }
 }
 
