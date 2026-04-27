@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="http://azure-logic.local/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Azure logic</title>
+    <link rel="stylesheet" href="assets/css/imprimir.css" media="print">
+    <link rel="stylesheet" href="assets/css/estilo.css" media="screen">
+    <link rel="stylesheet" href="assets/css/inicio.css" media="screen">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Azure logic">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <?php include("navegacion.php"); ?>
+        <div class="contenedor-flex banner">
+            <div class="textos-blancos">
+                <p>O Pulso Arquitectónico</p>
+                <h1>Deseñando
+                    o Futuro.</h1>
+                <p>Azure Logic ofrece arquitecturas na nube de alto rendemento deseñadas para o pulso da empresa
+                    moderna. A enxeñaría de precisión únese á resolución creativa de problemas.</p>
+                <div class="contenedor-flex botones-banner">
+                    <a class="boton boton-principal textos-blancos" href="">Comezar agora</a>
+                    <a class="boton boton-secundario textos-blancos" href="">Ver Arquitectura</a>
+                </div>
+            </div>
+            <div>
+                <img class="imaxe-responsive key-visual oculto-print" src="assets/imaxes/globo-terraqueo.png"
+                    alt="Globo terraqueo" width="693" height="752">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="contenedor-flex contenedor-centrado contidos-solucions">
+                <div class="textos-solucions">
+                    <h2>Solucións Escalables para
+                        Infraestrutura Global</h2>
+                    <p>Redefinimos a eficiencia mediante a orquestración
+                        automatizada e estratexias de implantación seguras
+                        en múltiples rexións.</p>
+                    <div class="video-corporativo">
+                        <video src="assets/videos/video-corporativo.mp4" muted
+                            poster="assets/imaxes/poster-corporativo.jpg"></video>
+                        </video>
+                        <div>
+                            <button type="button"><img src="assets/imaxes/icono-play-video.svg"
+                                    alt="play video"></button>
+                            <h3>Demo da Plataforma</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-flex grupo-solucions">
+                    <div>
+                        <img src="assets/imaxes/icono-cloud.svg" alt="icono cloud" width="33" height="24">
+                        <h3>Arquitectura Cloud</h3>
+                        <p>Sistemas de alta dispoñibilidade
+                            construídos sobre marcos de
+                            microservizos resilientes.</p>
+                    </div>
+                    <div>
+                        <img src="assets/imaxes/icono-seguridad.svg" alt="icono seguridade" width="24" height="30"
+                            aria-hidden="true">
+                        <h3>Ciber-resiliencia</h3>
+                        <p>Protocolos de seguridade zero-trust integrados a nivel de núcleo.</p>
+                    </div>
+                    <div>
+                        <img src="assets/imaxes/icono-devops.svg" alt="icono desenvolvemento" aria-hidden="true"
+                            width="30" height="24">
+                        <h3>Velocidade DevOps</h3>
+                        <p>Acelere os ciclos de lanzamento
+                            con fluxos de traballo CI/CD
+                            automatizados.</p>
+                    </div>
+                    <div>
+                        <img src="assets/imaxes/icono-intelixencia.svg" alt="icono intelixencia" aria-hidden="true"
+                            width="33" height="26">
+                        <h3>Intelixencia de Datos</h3>
+                        <p>Transforme os datos brutos en
+                            coñecementos arquitectónicos
+                            accionables.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fondo-terciario">
+            <div class="contenedor-centrado">
+                <h2 class="sub-raiado">Excelencia en Enxeñaría</h2>
+                <div class="contenedor-flex caixas-brancas">
+                    <div>
+                        <h3><span>01</span> Latencia Ultra Baixa</h3>
+                        <p>Rutas de computación periférica
+                            optimizadas que reducen os
+                            tempos de transacción ata un 45%
+                            en comparación coas
+                            configuracións tradicionais.</p>
+                        <ul>
+                            <li>Anycast DNS</li>
+                            <li>CDN Global</li>
+                        </ul>
+                    </div>
+                    <div class="caixa-video">
+                        <img class="fondo oculto-print" src="assets/imaxes/servidores.png" alt="servidores" width="363"
+                            height="453">
+                        <div>
+                            <button type="button" aria-label="play">
+                                <img src="assets/imaxes/icono-play.svg" alt="play">
+                            </button>
+                            <h3>Vexa a nosa Conferencia de Plataforma 2024</h3>
+                            <p>Descubra como escalamos LogicCore a 1M de peticións/seg.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3><span>02</span> Escalado Preditivo</h3>
+                        <p>Asignación de recursos impulsada por IA que evita pescozos de botella antes de que ocorran
+                            durante os picos de tráfico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="contenedor-grid">
+        <div class="item-1">
+            <img src="assets/imaxes/logotipo-footer.svg" alt="logotipo" width="165" height="28">
+            <p>Deseñando o Pulso Arquitectónico para a próxima xeración de xigantes dixitais.</p>
+        </div>
+        <div class="item-2 oculto-print contenedor-flex">
+            <div>
+                <h3>Navegación</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Solucións</a></li>
+                        <li><a href="#">Excelencia</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h3>legalidade</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Mapa do sitio</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="item-3">
+            <h3>Mantéñase ao día</h3>
+            <form action="#" method="post" class="contenedor-flex">
+                <input type="email" name="Newsletter" placeholder="Enderezo de correo">
+                <button type="submit">Unirse</button>
+            </form>
+            <p><small>© 2024 Azure Logic. Deseñando o Pulso Arquitectónico.</small></p>
+        </div>
+    </footer>
+</body>
+
+</html>
