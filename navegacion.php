@@ -1,6 +1,6 @@
-<!--navegacion php-->
+        <!--navegacion php-->
 
-<nav class="contenedor-flex posicion-fija">
+        <nav class="contenedor-flex posicion-fija">
             <img src="assets/imaxes/logotipo.png" alt="logotipo" width="163" height="32">
             <ul class="oculto-print">
                 <li><a role="button" href="index.html">Inicio</a></li>
