@@ -501,6 +501,7 @@ footer h3 {
     align-items: center;
     gap: 20px;
     flex-direction: column;
+    display: none;
 }
 
 .menu-mobile span {
@@ -625,7 +626,13 @@ footer h3 {
         justify-items: end;
     }
 
-    header nav ul {
+    header nav ul.nav-mobile {
+        position: static;
+        background: none;
+        opacity: 1;
+        backdrop-filter: none;
+        height: auto;
+        flex-direction: row;
         display: flex;
     }
 
