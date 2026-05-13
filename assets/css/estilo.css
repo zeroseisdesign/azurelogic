@@ -483,12 +483,14 @@ footer h3 {
     display: block;
     padding: 20px;
     z-index: 1;
+    background: none;
+    order: 2;
 }
 
 .nav-mobile.visible {
     opacity: 0.9;
-    transform: translateX(0);
     pointer-events: auto;
+    transform: scale(1);
 }
 
 .nav-mobile {
@@ -506,7 +508,7 @@ footer h3 {
     display: flex;
     opacity: 0;
     transition: all .3s ease-in-out;
-    transform: translateX(-100vw);
+    transform: scale(0);
     pointer-events: none;
 }
 
@@ -640,6 +642,9 @@ footer h3 {
         height: auto;
         flex-direction: row;
         display: flex;
+        width: auto;
+        transform: none;
+        pointer-events: auto;
     }
 
     .columna-xl-aside {
