@@ -486,6 +486,7 @@ footer h3 {
     z-index: 1;
     background: none;
     order: 2;
+    text-indent: -10000px;
 }
 
 .nav-mobile.visible {
